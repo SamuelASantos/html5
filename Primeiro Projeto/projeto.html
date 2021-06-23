@@ -1,0 +1,148 @@
+<!DOCTYPE html> <!-- Define tipo de html que está usando (Document Type) // html -> Informa que é HTML5 -->
+<html lang="pt-br"> <!-- Inicialização de códigos html -->
+<head> <!-- Configura informações que não aparecem para usuário (Cabeça) -->
+    <meta charset="UTF-8"> <!-- Atributo CHARSET utilizado para corrigir acentuações e caracteres especiais em alguns navegadores -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo HTML5</title> <!-- Define o título da página na aba da página (Título) -->
+</head> 
+<body> <!-- Configura informações que aparecem para usuário (Corpo) -->
+    
+    <!-- Tags de Cabeçalho -->
+    <h1>H1</h1> <!-- Título 1 - Negrito, texto maior e quebra de linha (Header) -->
+    <h2>H2</h2> <!-- Título 2 - Negrito, texto um pouco menor e quebra de linha (Header) -->
+    <h3>H3</h3> <!-- Título 3 - Negrito, texto um pouco menor e quebra de linha (Header) -->
+    <h4>H4</h4> <!-- Título 4 - Negrito, texto um pouco menor e quebra de linha (Header) -->
+    <h5>H5</h5> <!-- Título 5 - Negrito, texto um pouco menor e quebra de linha (Header) -->
+    <h6>H6</h6> <!-- Título 6 - Negrito, texto um pouco menor e quebra de linha (Header) -->
+    <hr>
+    <!-- Tags de Formatação -->
+    <pre>
+        <b>NEGRITO</b> <!-- Bold -->
+        <strong>NEGRITO</strong> <!-- Negrito (Força) -->
+        <i>Itálico</i> <!-- Itálico (Italic) OBS: Não mais recomendado -->
+        <em>Itálico</em> <!-- Itálico (Emphasis) -->
+        <u>Sublinhado</u> <!-- Sublinhado (Underline) -->
+        <strike>Erro</strike> <!-- Linha horizontal no meio da palavra (Greve) -->
+        </br> Quebrar Linha <!-- Break -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu tincidunt orci, ac sagittis mauris. Nam ultricies egestas ex eu finibus. Sed placerat lobortis feugiat.</p> <!-- Paragraph -->
+    </pre>
+    <hr> <!-- Horizontal Row -->
+
+    <!-- Tags de Listas -->
+    <ul type="circle"> <!-- Lista não ordenada (unordered list); Type -> Seleciona tipo diferentes de marcadores para a lista (Circle, square e disc) -->
+        <li>Arroz</li> <!-- Itens da lista (List Items) -->
+        <li>Feijão</li>
+        <li>Macarrão</li>
+    </ul>
+    <ul type="square"> <!-- Type -> Seleciona tipo diferentes de marcadores para a lista (Circle, square e disc) -->
+        <li>Arroz</li>
+        <li>Feijão</li>
+        <li>Macarrão</li>
+    </ul>
+    <ul type="disc">
+        <li>Arroz</li>
+        <li>Feijão</li>
+        <li>Macarrão</li>
+    </ul>
+    <ol type="1"> <!-- Lista ordenada (ordered list) -->
+        <li>Farinha</li>
+        <li>Ovo</li>
+        <li>Fermento</li>
+    </ol>
+    <ol type="A"> <!-- Type -> Seleciona tipo diferentes de marcadores para a lista (1, A, a, I, i) -->
+        <li>Farinha</li>
+        <li>Ovo</li>
+        <li>Fermento</li>
+    </ol>
+    <ol type="a"> 
+        <li>Farinha</li>
+        <li>Ovo</li>
+        <li>Fermento</li>
+    </ol>
+    <ol type="I"> 
+        <li>Farinha</li>
+        <li>Ovo</li>
+        <li>Fermento</li>
+    </ol>
+    <ol type="i"> 
+        <li>Farinha</li>
+        <li>Ovo</li>
+        <li>Fermento</li>
+    </ol>
+    <hr>
+
+    <!-- Tags de Imagem -->
+    <img src="imagens/ferrari.jpg" width="600" height="400"> <!-- Adicionar imagens 
+                                                                  src="" → Caminho onde a imagem está (Source)
+                                                                  width="" → Atributo (Largura)
+                                                                  height="" → Atributo (Altura) -->
+    <hr>
+    
+    <!-- Tags de Links -->
+    <a href="http://www.google.com.br">Google</a> <!-- Links - Âncora (Anchor)
+                                                       href="sobre.html" → Envia para um determinado local (interno ou externo) (Hyperlink Reference) -->
+    <hr>
+    
+    <!-- Tags de Tabelas -->
+    <table border="1" width="100%">
+        <tr>
+            <th>Código</th>
+            <th>Produto</th>
+            <th>Preço</th>
+        </tr>
+        <tr>
+            <td>001</td>
+            <td>Notebook</td>
+            <td>R$ 5000,98</td>
+        </tr>
+        <tr>
+            <td>002</td>
+            <td>Tablet</td>
+            <td>R$ 1000,00</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Cupom</td> <!-- Extensão da linha (Row Span) -->
+            <td colspan="2">- R$ 10,00</td> <!-- Extensão da coluna (Column Span) -->
+        </tr>
+        <tr>
+            <td colspan="2">- R$ 20,00</td>
+        </tr>
+    </table>
+    <hr>
+
+    <!-- Tags de Formulário -->
+    <form action="processa.php"> <!-- Formulário; action="processa.php" → Define a página para onde será enviado as informações do formulário -->
+        Login:</br>
+        <input type="text" name="login"> </br> <!-- Entrada; type="" → Tipo de entrada; text → Caixa de texto; name="login" → Recupera os dados para uma próxima tela usando uma linguagem de programação -->
+        Senha:</br>
+        <input type="password" name="senha"> </br> <!-- password → Senha -->
+        <input type="submit" value="Enviar"> <!-- submit → Enviar formulário -->
+        <input type="button" value="Clique"> <!-- button → Botão comum; "Clique" → Define o valor que estará no botão -->
+    </form>
+    <hr>
+    <form action="">
+        Sexo: <br/>
+        <input type="radio" name="sexo" value="m"> Masculino <br/> <!-- Botão para selecionar várias opções (Rádio) OBS: Para não selecionar mais de um radio, é necessário colocar o mesmo name=""; value="M" → Valor que será enviado do formulário  -->
+        <input type="radio" name="sexo" value="f"> Feminino <br/><br/>
+        Interesses: <br/>
+        <input type="checkbox" name="interesses"> Futebol <br/> <!-- checkbox → Quadrado usado para checar OBS: Para selecionar mais de um checkbox, é necessário colocar o mesmo name="" -->
+        <input type="checkbox" name="interesses"> Artes <br/>
+        <input type="checkbox" name="interesses"> Músicas <br/><br/>
+        Estado: <br/>
+        <select name="estado"> <!-- Caixa com uma seleção de opções (Seleção) -->
+            <option value="PE">PE</option> <!-- Opções disponíveis para selecionar -->
+            <option value="PE">PB</option>
+            <option value="PE">MA</option>
+            <option value="PE">BA</option>
+        </select><br/><br/>
+        Informações adicionais: <br/>
+        <textarea name="info"></textarea> <br/> <!-- Área maior de texto (Área de Texto) -->
+        <input type="submit" value="Enviar Cadastro">
+    </form>
+    <hr>
+
+    <!-- Caracteres Especiais -->
+    <a href="https://www.w3schools.com/html/html_entities.asp">Caracteres Especiais</a>
+</body>
+</html>
